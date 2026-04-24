@@ -1,0 +1,14 @@
+<nav
+class="top-0 absolute z-50 w-full flex"
+
+>
+  <div class="w-full flex items-center justify-between px-6 py-3 bg-slate-300 text-white">
+    <a [routerLink]="'/'" class="text-lg font-bold text-white hover:text-yellow-800">Mi Aplicacion</a>
+    <div class="flex items-center space-x-4">
+      <a   [routerLink]="'/'"  routerLinkActive="text-blue-500 undeline" class="text-white hover:text-yellow-300">Inicio</a>
+      <a  class="hover:underline"   routerLinkActive="text-blue-500 undeline" [routerLinkActiveOptions]="{ exact: true }" [routerLink]="'/about'" class="text-white hover:text-yellow-300" >Nosotros</a>
+      <a  class="hover:underline"   routerLinkActive="text-blue-500 undeline" [routerLinkActiveOptions]="{ exact: true }" [routerLink]="'/contact'" class="text-white hover:text-yellow-300">Contacto</a>
+      <a  class="hover:underline"  routerLinkActive="text-blue-500 undeline" [routerLinkActiveOptions]="{ exact: true }" [routerLink]="'/pricing'" class="text-white hover:text-yellow-300">Precios</a>
+    </div>
+  </div>
+</nav>
